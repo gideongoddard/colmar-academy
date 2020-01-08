@@ -1,14 +1,32 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Fira Sans', sans-serif;
 }
 
 h1 {
     font-size: 40px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.button-link {
+    font-size: 21px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 8px;
+    width: 100%;
 }
 
 /* HEADER STYLES */
@@ -54,10 +72,6 @@ header {
     font-size: 16px;
 }
 
-.logo p {
-    margin: 0;
-}
-
 #colmar {
     font-size: 26px;
 }
@@ -76,7 +90,6 @@ header {
 .large-nav ul {
     list-style-type: none;
     display: flex;
-    margin: 0;
     justify-content: flex-end;
 }
 
@@ -106,16 +119,21 @@ header {
 }
 
 #banner-text {
-    margin: 32px 16px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 768px) {
-    #banner img {
-        margin: 32px 24px;
-        width: 60%;
+@media only screen and (min-width: 940px) {
+    #banner-content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 32px 24px;
+        grid-gap: 24px;
     }
 
     #banner-text {
-        margin: 0;
+        padding-right: 24px;
     }
 }
