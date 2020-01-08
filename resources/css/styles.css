@@ -12,10 +12,23 @@ h1 {
     margin-bottom: 32px;
 }
 
+h2 {
+    font-size: 36px;
+    margin: 32px 0 16px 0;
+}
+
 h3 {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    margin: 24px 0;
 }
 
 .button-link {
@@ -27,6 +40,7 @@ h3 {
     background-color: grey;
     padding: 8px;
     width: 100%;
+    margin-top: 24px;
 }
 
 /* HEADER STYLES */
@@ -100,6 +114,11 @@ header {
 .large-nav a {
     text-decoration: none;
     color: black;
+    transition: color 300ms ease-out;
+}
+
+.large-nav a:hover {
+    color: blue;
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,5 +154,114 @@ header {
 
     #banner-text {
         padding-right: 24px;
+    }
+}
+
+/* INFORMATION STYLES */
+
+#information {
+    padding: 16px;
+}
+
+#practice {
+    display: none;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.tile-text {
+    margin: 12px 16px 16px 16px;
+}
+
+.right-tile a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 940px) {
+    #information {
+        padding: 32px 24px;
+    }
+
+    #information-content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 24px;
+    }
+
+    #right-tiles {
+        border-left: 1px solid lightgrey;
+    }
+
+    .right-tile {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding: 16px;
+        border-top: 1px solid lightgrey;
+        transition: background-color 500ms ease-out;
+    }
+
+    .right-tile:hover {
+        background-color: lightgrey;
+    }
+
+    .right-tile:first-child {
+        border-top: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    #practice {
+        display: block;
+    }
+}
+
+/* LEARNING STYLES */
+#learning {
+    padding: 0 16px;
+    border-top: 1px solid lightgrey;
+    text-align: center;
+}
+
+.tile img, .tile p {
+    display: none;
+}
+
+.tile .tile-text {
+    padding: 16px 16px 8px 16px;
+    background-color: lightgrey;
+    text-align: left;
+}
+
+@media only screen and (min-width: 940px) {
+    #learning {
+        padding: 32px 72px;
+        border-top: none;
+        background-color: lightgrey;
+    }
+
+    .tile .tile-text {
+        background-color: white;
+        padding: 16px;
+        margin: 0;
+        min-height: 170px;
+    }
+
+    #learning-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+    }
+
+    .tile img, .tile p {
+        display: block;
+        color: grey;
     }
 }
