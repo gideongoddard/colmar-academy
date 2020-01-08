@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* HEADER STYLES */
+
+header {
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+}
+
+.small-nav {
+    width: 100%;
+}
+
+.small-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-nav img {
+    padding: 16px 10px 10px 10px;
+}
+
+.large-nav, .logo {
+    display: none;
+    padding: 16px 0;
+}
+
+.logo {
+    display: none;
+    padding: 16px 0;
+    width: 40%;
+}
+
+.logo a {
+    font-size: 26px;
+    text-decoration: none;
+    display: flex;
+    color: black;
+    font-size: 16px;
+}
+
+.logo p {
+    margin: 0;
+}
+
+#colmar {
+    font-size: 26px;
+}
+
+#academy {
+    font-size: 26px;
+    color: grey;
+    font-weight: 300;
+}
+
+.large-nav {
+    width: 59%;
+    padding: 20px 0;
+}
+
+.large-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.large-nav li {
+    padding-left: 16px;
+}
+
+.large-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .small-nav {
+        display: none;
+    }
+
+    .large-nav, .logo {
+        display: inline-block;
+    }
+}
+
+/* BANNER STYLES */
+
+#banner {
+    background-color: lightgrey;
+}
+
+#banner-text {
+    margin: 32px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    #banner img {
+        margin: 32px 24px;
+        width: 60%;
+    }
+
+    #banner-text {
+        margin: 0;
+    }
+}
