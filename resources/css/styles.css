@@ -145,11 +145,16 @@ header {
 }
 
 @media only screen and (min-width: 940px) {
+    #banner {
+        padding: 32px 24px;
+    }
+
     #banner-content {
         display: grid;
         grid-template-columns: 60% 40%;
-        padding: 32px 24px;
         grid-gap: 24px;
+        max-width: 1200px;
+        margin: auto;
     }
 
     #banner-text {
@@ -188,6 +193,8 @@ header {
         display: grid;
         grid-template-columns: 60% 40%;
         grid-gap: 24px;
+        max-width: 1200px;
+        margin: auto;
     }
 
     #right-tiles {
@@ -251,13 +258,15 @@ header {
         background-color: white;
         padding: 16px;
         margin: 0;
-        min-height: 170px;
+        min-height: 186px;
     }
 
     #learning-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 32px;
+        max-width: 1200px;
+        margin: auto;
     }
 
     .tile img, .tile p {
