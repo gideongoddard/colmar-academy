@@ -315,6 +315,7 @@ header {
 
     video {
         margin-bottom: 24px;
+        background-color: lightgrey;
     }
 }
 
